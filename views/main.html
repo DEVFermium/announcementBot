@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <!-- 카카오 API 설치 -->
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js"
+      integrity="sha384-kYPsUbBPlktXsY6/oNHSUDZoTX6+YI51f63jCPEIPFP09ttByAdxd2mEjKuhdqn4" crossorigin="anonymous"></script>
+
+
+    <title>시간표공지</title>
+</head>
+<body>
+    <header>
+        <h1 id="header">시간표 공지</h1>
+        <img src="yeonsu.png" id="logo">
+    </header>
+
+    <main>
+        <div>
+            <!--반 설정 UI-->
+            <div>
+                <!-- ALERT -->
+                 <p id="class_alert">* 반 설정이 올바르지 않습니다 *</p>
+            </div>
+            <div>
+                <!-- MAIN -->
+                <input type="text" id="class" placeholder="반">
+            </div>
+        </div>
+        <div>
+            <!-- 라벨 -->
+            <p id="label1">내일 시간표</p>
+            <p id="label2">〉</p>
+        </div>
+        <div>
+            <!-- 메인 시간표 -->
+             <div>
+                <!-- 1교시 -->
+                 <canvas class="background" id="first"></canvas>
+                 <p class="subject_text" id="first_text">1교시. </p>
+                 <input class="input_box_item" id="first_item" type="text" placeholder="준비물">
+                 <input class="input_box_notice" id="first_notice" type="text" placeholder="안내사항">
+             </div>
+             <div>
+                <!-- 2교시 -->
+                 <canvas class="background" id="second"></canvas>
+                 <p class="subject_text" id="second_text">2교시. </p>
+                 <input class="input_box_item" id="second_item" type="text" placeholder="준비물">
+                 <input class="input_box_notice" id="second_notice" type="text" placeholder="안내사항">
+             </div>
+             <div>
+                <!-- 3교시 -->
+                 <canvas class="background" id="third"></canvas>
+                 <p class="subject_text" id="third_text">3교시. </p>
+                 <input class="input_box_item" id="third_item" type="text" placeholder="준비물">
+                 <input class="input_box_notice" id="third_notice" type="text" placeholder="안내사항">
+             </div>
+             <div>
+                <!-- 4교시 -->
+                 <canvas class="background" id="fourth"></canvas>
+                 <p class="subject_text" id="fourth_text">4교시. </p>
+                 <input class="input_box_item" id="fourth_item" type="text" placeholder="준비물">
+                 <input class="input_box_notice" id="fourth_notice" type="text" placeholder="안내사항">
+             </div>
+             <div>
+                <!-- 5교시 -->
+                 <canvas class="background" id="fifth"></canvas>
+                 <p class="subject_text" id="fifth_text">5교시. </p>
+                 <input class="input_box_item" id="fifth_item" type="text" placeholder="준비물">
+                 <input class="input_box_notice" id="fifth_notice" type="text" placeholder="안내사항">
+             </div>
+             <div>
+                <!-- 6교시 -->
+                 <canvas class="background" id="sixth"></canvas>
+                 <p class="subject_text" id="sixth_text">6교시. </p>
+                 <input class="input_box_item" id="sixth_item" type="text" placeholder="준비물">
+                 <input class="input_box_notice" id="sixth_notice" type="text" placeholder="안내사항">
+             </div>
+             <div>
+                <!-- 7교시 -->
+                 <canvas class="background" id="seventh"></canvas>
+                 <p class="subject_text" id="seventh_text">7교시. </p>
+                 <input class="input_box_item" id="seventh_item" type="text" placeholder="준비물">
+                 <input class="input_box_notice" id="seventh_notice" type="text" placeholder="안내사항">
+             </div>
+             <div>
+                <!-- 전달사항 -->
+                 <canvas class="background" id="notice"></canvas>
+                 <p class="subject_text" id="notice_text">전달사항</p>
+                 <input class="input_box_item" id="main_notice" type="text" placeholder="전달사항">
+             </div>
+             <div>
+                <!-- 전송버튼 -->
+                <button class="reward-btn" id="reward-btn">
+                    <span class="IconContainer">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 60 20"
+                        class="box-top box"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-width="4"
+                          stroke="#6A8EF6"
+                          d="M2 18L58 18"
+                        ></path>
+                        <circle
+                          stroke-width="5"
+                          stroke="#6A8EF6"
+                          fill="#101218"
+                          r="7"
+                          cy="9.5"
+                          cx="20.5"
+                        ></circle>
+                        <circle
+                          stroke-width="5"
+                          stroke="#6A8EF6"
+                          fill="#101218"
+                          r="7"
+                          cy="9.5"
+                          cx="38.5"
+                        ></circle>
+                      </svg>
+                  
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 58 44"
+                        class="box-body box"
+                      >
+                        <mask fill="white" id="path-1-inside-1_81_19">
+                          <rect rx="3" height="44" width="58"></rect>
+                        </mask>
+                        <rect
+                          mask="url(#path-1-inside-1_81_19)"
+                          stroke-width="8"
+                          stroke="#6A8EF6"
+                          fill="#101218"
+                          rx="3"
+                          height="44"
+                          width="58"
+                        ></rect>
+                        <line
+                          stroke-width="6"
+                          stroke="#6A8EF6"
+                          y2="29"
+                          x2="58"
+                          y1="29"
+                          x1="-3.61529e-09"
+                        ></line>
+                        <path
+                          stroke-linecap="round"
+                          stroke-width="5"
+                          stroke="#6A8EF6"
+                          d="M45.0005 20L36 3"
+                        ></path>
+                        <path
+                          stroke-linecap="round"
+                          stroke-width="5"
+                          stroke="#6A8EF6"
+                          d="M21 3L13.0002 19.9992"
+                        ></path>
+                      </svg>
+                  
+                      <span class="coin"></span>
+                    </span>
+                    <span class="text">SEND</span>
+                  </button>
+                  
+             </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

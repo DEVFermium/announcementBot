@@ -1,0 +1,328 @@
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 100;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+body, h1, h2, h3, h4, h5, h6, input, textarea, select {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+h1#header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    position: absolute;
+    top: 1vh;
+    left: 2.5vw;
+    text-align: center;
+    width: 100vw;
+}
+
+body {
+    background : linear-gradient(-45deg, rgba(36, 4, 75, 0.98), rgba(18, 0, 39, 0.98), rgba(11, 0, 24, 0.98));
+    height: 100vh;
+    width: 100vw;
+}
+
+img#logo {
+    height: 5vh;
+    position: absolute;
+    top: 2vh;
+    left: 25vw;
+}
+
+input#class {
+    background: linear-gradient(90deg, rgba(25, 25, 37, 0.9), rgba(23, 25, 47, 0.5));
+    border: 0cap;
+    border-radius: 5000px;
+    position: absolute;
+    height: 5vh;
+    text-align: center;
+    font-size: 1em;
+    width: 80vw;
+    left: 10vw;
+    top: 10vh;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0vw 0vh 2em 1em rgba(255, 255, 255, 0.05); /* 그림자 추가 */
+}
+
+p#class_alert {
+    color: rgb(255, 94, 94);
+    text-align: left;
+    position: absolute;
+    width: 70vw;
+    left: 15vw;
+    font-size: 0.5em;
+    height: 1vh;
+    top: 7vh;
+    display: none;
+}
+
+p#label1 {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+    position: absolute;
+    width: 90vw;
+    text-align: left;
+    left: 5vw;
+    top: 15vh;
+}
+
+p#label2 {
+    color: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    font-size: 0.8em;
+    position: absolute;
+    width: 90vw;
+    text-align: right;
+    left: 5vw;
+    top: 16vh;
+}
+
+.background {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(25, 25, 37, 0.9), rgba(23, 25, 47, 0.8));
+    border-radius: 5vw;
+    width: 87vw;
+    height: 7.5vh;
+    left: 6.5vw;
+    box-shadow: 0vw 0vh 2em 1em rgba(255, 255, 255, 0.05); /* 그림자 추가 */
+}
+
+canvas#first {
+    top: 22vh;
+}
+
+canvas#second {
+    top: 31vh;
+}
+
+canvas#third{
+    top: 40vh;
+}
+
+canvas#fourth {
+    top: 49vh;
+}
+
+canvas#fifth {
+    top: 58vh;
+}
+
+canvas#sixth {
+    top: 67vh;
+}
+
+canvas#seventh {
+    top: 76vh;
+}
+
+canvas#notice {
+    top: 85vh;
+    height: 7vh;
+}
+
+.subject_text {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+    position: absolute;
+    left: 10vw;
+    font-weight: lighter;
+}
+
+p#first_text {
+    top : 20.5vh;
+}
+
+p#second_text {
+    top: 29.5vh;
+}
+
+p#third_text {
+    top: 38.5vh;
+}
+
+p#fourth_text {
+    top: 47.5vh;
+}
+
+p#fifth_text {
+    top: 56.5vh;
+}
+
+p#sixth_text {
+    top: 65.5vh;
+}
+
+p#seventh_text {
+    top: 74.5vh;
+}
+
+p#notice_text {
+    top: 83.5vh;
+}
+
+.input_box_item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0cap;
+    border-radius: 1vh  ;
+    position: absolute;
+    height: 3vh;
+    text-align: center;
+    font-size: 1em;
+    width: 39vw;
+    left: 9.5vw;
+    top: 25vh;
+    font-weight: bold;
+    color: white;
+}
+
+.input_box_notice {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0cap;
+    border-radius: 1vh  ;
+    position: absolute;
+    height: 3vh;
+    text-align: center;
+    font-size: 1em;
+    width: 39vw;
+    right: 9.5vw;
+    font-weight: bold;
+    color: white;
+}
+
+input#first_item {
+    top: 25vh;
+}
+
+input#first_notice {
+    top: 25vh;
+}
+
+input#second_item {
+    top: 34vh;
+}
+
+input#second_notice {
+    top: 34vh;
+}
+
+input#third_item {
+    top: 43vh;
+}
+
+input#third_notice {
+    top: 43vh;
+}
+
+input#fourth_item {
+    top: 52vh;
+}
+
+input#fourth_notice {
+    top: 52vh;
+}
+
+input#fifth_notice {
+    top: 61vh;
+}
+
+input#fifth_item {
+    top: 61vh;
+}
+
+input#sixth_item {
+    top: 70vh;
+}
+
+input#sixth_notice {
+    top: 70vh;
+}
+
+input#seventh_item {
+    top: 79vh;
+}
+
+input#seventh_notice {
+    top: 79vh;
+}
+
+input#main_notice {
+    top: 88vh;
+    width: 80vw;
+}
+
+.reward-btn {
+    width: 35vw;
+    height: 5vh;
+    background-color: #101218;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    position: absolute;
+    bottom: 2vh;
+    left: 32.5vw;
+    box-shadow: 0vw 0vh 3em rgba(255, 255, 255, 0.2); /* 그림자 추가 */
+  }
+  .IconContainer {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .IconContainer svg {
+    width: 40%;
+    z-index: 3;
+  }
+  .box-top {
+    transition: all 0.3s;
+  }
+  .text {
+    width: 15vw;
+    height: 100%;
+    font-size: 1em;
+    color: #6a8ef6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bolder;
+  }
+  .reward-btn:hover .IconContainer .box-top {
+    transform: translateY(-5px);
+  }
+  .reward-btn:hover {
+    background-color: #202531;
+  }
+  .reward-btn:hover .coin {
+    transform: translateY(-5px);
+    transition-delay: 0.2s;
+  }
+  .coin {
+    width: 25%;
+    height: 25%;
+    background-color: #e4d61a;
+    position: absolute;
+    border-radius: 50%;
+    transition: all 0.3s;
+    z-index: 1;
+    border: 2px solid #ffe956;
+    margin-top: 4px;
+  }
+  

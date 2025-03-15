@@ -1,1 +1,17 @@
+<html>
+    <head>
+        <meta name="mobile-web-app-capable" content="yes"> <link rel="manifest" href="/manifest.json">
+    <script>
+         if (document.documentElement.requestFullscreen) {
+            document.documentElement.requestFullscreen();
+        } else if (document.documentElement.mozRequestFullScreen) { /* Firefox */
+            document.documentElement.mozRequestFullScreen();
+        } else if (document.documentElement.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+            document.documentElement.webkitRequestFullscreen();
+        } else if (document.documentElement.msRequestFullscreen) { /* IE/Edge */
+            document.documentElement.msRequestFullscreen();
+        }
+    </script>
+    </head>
+</html>
 연수고등학교 시간표 공지 made by c.yt_1

@@ -3,6 +3,6 @@
      "icons": [
       { "src": "yeonsu.png", "sizes": "192x192", "type": "image/png"
        }
-      ], "display": "fullscreen","start_url": "/", "description":"not", "background_color": "white", "short_name": "시간표공지", "theme_color": "#FFBC00", "orientation": "portrait" 
+      ], "display": "fullscreen","start_url": "/main", "description":"not", "background_color": "white", "short_name": "시간표공지", "theme_color": "#FFBC00", "orientation": "portrait" 
     
     }
